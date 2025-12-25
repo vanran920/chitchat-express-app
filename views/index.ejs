@@ -15,8 +15,8 @@
            <h2 class="content"><%=post.content %> </h2>
        </div>
          <br />
-       <a href="http://localhost:8080/posts/<%=post.id%>">See In Detail</a>
-       <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit Post</a>
+       <a href="/posts/<%=post.id%>">See In Detail</a>
+       <a href="/posts/<%=post.id%>/edit">Edit Post</a>
        <form method="post" action="/posts/<%=post.id%>?_method=DELETE" class="inline-form delete-form">
           <button class="delete-btn">Delete Post</button>
        </form>
@@ -24,7 +24,7 @@
 
     <br />
     <br />
-    <a href="http://localhost:8080/posts/new">Create New Posts</a>
+    <a href="/posts/new">Create New Posts</a>
     </div>
 </body>
 </html>
